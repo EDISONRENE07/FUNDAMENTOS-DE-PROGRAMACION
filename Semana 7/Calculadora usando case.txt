@@ -1,0 +1,36 @@
+print("-"*5,"Bienvenido a la super calculadora","-"*5)
+print("Suma")
+print("Resta")
+print("Miltiplicacion")
+print("Division")
+print("Salir")
+op = input("Ingrese el numero de la operacion")
+op = op.lower() #upper
+match op:
+    case "suma":   #  elif op == 2:
+        print("Usted a elejido realziar una suma")
+        print("Ingrese 2 numeros")
+        n1 = int(input("Ingrese el primer numero: "))
+        n2 = int(input("Ingrese el segundo numero: "))
+        print(f"El resultado de la suma es: {n1 + n2}")
+    case "resta":
+        print("Usted a elejido realziar una resta")
+        print("Ingrese 2 numeros")
+        n1 = int(input("Ingrese el primer numero: "))
+        n2 = int(input("Ingrese el segundo numero: "))
+        print(f"El resultado de la resta es: {n1 - n2}")
+    case "multiplicacion":
+        print("Usted a elejido realziar una multiplicacion")
+        print("Ingrese 2 numeros")
+        n1 = int(input("Ingrese el primer numero: "))
+        n2 = int(input("Ingrese el segundo numero: "))
+        print(f"El resultado de la multiplicacion es: {n1 * n2}")
+    case "division":
+        print("Usted a elejido realziar una division")
+        print("Ingrese 2 numeros")
+        n1 = int(input("Ingrese el primer numero: "))
+        n2 = int(input("Ingrese el segundo numero: "))
+        print(f"El resultado de la division es: {n1 / n2}")
+    case _:
+        print("Operacion invalida")
+ 
